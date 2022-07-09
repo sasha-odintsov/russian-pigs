@@ -1,0 +1,32 @@
+.content-wrapper {
+    margin:10px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .header-secondary-wrap {
+            margin-right: 10%;
+        }
+    }
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .main-item {
+            display: flex;
+            width: 33.3%;
+            .main-item-disc {
+                width: 200px;
+
+                .main-item-disc-icon-wrap {
+                    width: 60px;
+
+                    .main-item-disc-icon {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
