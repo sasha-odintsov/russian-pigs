@@ -9,13 +9,19 @@
             margin-right: 10%;
         }
     }
+
     .main-content {
         display: flex;
         flex-wrap: wrap;
         
         .main-item {
             display: flex;
-            width: 33.3%;
+            width: 30%;
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+
             .main-item-disc {
                 width: 200px;
 
