@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    .header-primary-wrap {
+        display: flex;
+
+        .header-logo-wrap {
+            width: 100px;
+            min-width: 50px;
+            display: flex;
+            align-items: center;
+
+            .header-logo {
+                width: 100%;
+            }
+        }
+
+        .header-title-wrap {
+            .header-title-disc, .header-title {
+                margin: 20px;
+                font-size: 1.2rem;
+            }
+
+            .header-title {
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .header-secondary-wrap {
+        text-align: end;
+
+        .header-date {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .header-day {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+    }
+}

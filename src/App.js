@@ -1,15 +1,15 @@
-import './App.css';
+import './App.scss';
 // import { useState, useEffect } from 'react';
 import Main from './Main';
 import { Routes, Route, Link } from 'react-router-dom';
-import DailyLosses from './DailyLosses';
+import MainUa from './MainUa';
 
 function App() {
   return (
     <div className='wrapper'>
         <Routes>
           <Route path='/' element={<Main/>}/>
-          <Route path='/dailylosses' element={<DailyLosses/>}/>
+          <Route path='/ua' element={<MainUa/>}/>
         </Routes>
     </div>
   );

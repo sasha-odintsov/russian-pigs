@@ -1,29 +1,20 @@
 .content-wrapper {
-    margin:10px;
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-
-        .header-secondary-wrap {
-            margin-right: 10%;
-        }
-    }
-
     .main-content {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         
         .main-item {
             display: flex;
-            width: 30%;
+            justify-content: space-between;
+            width: 32.5%;
             border: 1px solid #000;
             border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
+            margin-top: 10px;
+            padding: 10px 20px;
 
             .main-item-disc {
-                width: 200px;
+                margin-right: 10px;
 
                 .main-item-disc-icon-wrap {
                     width: 60px;
@@ -32,6 +23,14 @@
                         width: 100%;
                     }
                 }
+            }
+
+            .main-item-amount {
+                display: flex;
+                align-items: center;
+                text-align: end;
+                font-size: 1.2rem;
+                font-weight: bold;
             }
         }
     }
