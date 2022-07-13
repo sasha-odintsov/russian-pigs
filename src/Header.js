@@ -22,7 +22,7 @@ function Header({txtDscr, txtTitle, txtDay}) {
         </div>
         <div className='header-secondary-wrap'>
           <p className='header-date'>{value.date}</p>
-          <p className='header-day'>{value.day}{txtDay}</p>
+          <p className='header-day'><span className='header-day-span'>{value.day}</span>{txtDay}</p>
         </div>
       </header>
     )

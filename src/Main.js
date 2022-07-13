@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 
 function Main() {
   return (
-    <div className='content-wrapper'>
-      <div className='lang-link'>
-        ENG <Link to='/ua'>UA</Link> 
+    <>
+      <div className='lang-link-wrap'>
+        ENG <Link to='/ua' className='lang-link'>UA</Link> 
       </div>
+      <div className='content-wrapper'>
       <Header 
       txtDscr={'General Staff of the Armed Forces of Ukraine informs'}
       txtTitle={'The total losses of the russian occupier'}
@@ -19,7 +20,9 @@ function Main() {
         <Statistics />
       </main>
       <Footer txt={'Slava Ukraine!'}/>
-    </div>
+
+      </div>
+    </>
   );
 }
 

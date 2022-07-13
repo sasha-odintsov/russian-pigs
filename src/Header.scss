@@ -1,7 +1,13 @@
+@import './tools.scss';
+
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 10px 40px;
+    background-color: $backgroundMain;
+    color: $colorTitle;
+    box-shadow: -1px -2px 4px rgba(#000, .2), 
+    inset 0 1px 1px rgba(#fff, .2);
 
     .header-primary-wrap {
         display: flex;
@@ -19,12 +25,12 @@
 
         .header-title-wrap {
             .header-title-disc, .header-title {
-                margin: 20px;
+                margin: 15px;
                 font-size: 1.2rem;
             }
 
             .header-title {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 font-weight: bold;
             }
         }
@@ -39,8 +45,13 @@
         }
 
         .header-day {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             margin: 0;
+
+            .header-day-span {
+                color: $colorSpecial;
+                font-weight: bold;
+            }
         }
     }
 }

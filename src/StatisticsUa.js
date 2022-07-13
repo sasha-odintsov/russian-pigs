@@ -106,8 +106,8 @@ function StatisticsUa() {
       total={value.cruise_missiles}
       increase={checkAmount(value.increase_cruise_missiles)}
       />
-      <div className='main-item'>
-        
+      <div className='main-item main-item-special'>
+        <a href='https://donate.thedigital.gov.ua' className='main-item-link'>Допомогти ЗСУ</a>
       </div>
     </>
   )    

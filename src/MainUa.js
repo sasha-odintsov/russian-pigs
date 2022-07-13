@@ -5,20 +5,22 @@ import Footer from './Footer';
 
 const MainUa = () => {  
   return(
-    <div className='content-wrapper'>
-      <div className='lang-link'>
-        <Link to='/'>ENG</Link> UA 
+    <>
+      <div className='lang-link-wrap'>
+        <Link to='/' className='lang-link'>ENG</Link> UA 
       </div>
-      <Header 
-      txtDscr={'Генеральний штаб ЗС України інформує'}
-      txtTitle={'Загальні бойові втрати російського окупанта'}
-      txtDay={'-й день війни'}
-      />
-      <main className='main-content'>
-        <StatisticsUa />
-      </main>
-      <Footer txt={'Слава Україні!'}/>
-    </div>
+      <div className='content-wrapper'>
+        <Header 
+        txtDscr={'Генеральний штаб ЗС України інформує'}
+        txtTitle={'Загальні бойові втрати російського окупанта'}
+        txtDay={'-й день війни'}
+        />
+        <main className='main-content'>
+          <StatisticsUa />
+        </main>
+        <Footer txt={'Слава Україні!'}/>
+      </div>
+    </>
   )    
 }
 

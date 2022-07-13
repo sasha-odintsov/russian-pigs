@@ -1,6 +1,29 @@
+@import './tools.scss';
+
 .footer {
+    background-color: $backgroundMain;
+    color: $colorTitle;
+    box-shadow: 2px 2px 4px rgba(#000, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     .footer-item {
-        text-align: center;
         font-size: 1.2rem;
+        padding: 30px 5px;
+        margin: 0;
+        
+    }
+    .footer-img-wrap{
+        display: inline-block;
+        width: 2rem;
+        
+        .footer-img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: -1px -1px 2px rgba(#fff, .8), -1px 0 1px rgba(#fff, .8),
+            0 -1px 1px rgba(#fff, .8), 1px 2px 1px rgba(#000, .5),
+            0px 1px 2px rgba(#000, .5), 2px 0 2px rgba(#000, .5);
+        }
     }
 }

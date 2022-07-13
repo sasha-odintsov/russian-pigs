@@ -8,7 +8,7 @@ function StatisticsItem({img, title, total, increase}) {
                 </div>
                 <div className='main-item-disc-title'>{title}</div>
             </div>
-            <div className='main-item-amount'>{total} {increase}</div>
+            <div className='main-item-amount'>{total}<span className='main-item-amount-increase'>{increase}</span></div>
         </div>
         </>
     )

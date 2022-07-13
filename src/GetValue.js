@@ -7,10 +7,10 @@ function GetValue() {
         async function getData() {
             const response = await fetch('https://russianwarship.rip/api/v1/statistics/latest');
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
 
             setValue({
-                date: data.data.date.split('-').reverse().join(' '),
+                date: data.data.date.split('-').reverse().join('/'),
                 day: data.data.day,
                 aa_warfare_systems: data.data.stats.aa_warfare_systems,
                 armoured_fighting_vehicles: data.data.stats.armoured_fighting_vehicles,
@@ -44,6 +44,7 @@ function GetValue() {
         }
         getData()
     }, [])
+    console.log(value)
     return value;
 }
 

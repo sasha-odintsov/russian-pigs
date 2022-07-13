@@ -1,0 +1,6 @@
+$backgroundMain: #4d575c;
+$colorTitle: #ececec;
+$colorSpecial: #d34545;
+@mixin text-shadow {
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px rgba(#000, .3);
+}

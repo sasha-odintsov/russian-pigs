@@ -1,3 +1,5 @@
+@import './tools.scss';
+
 * {
     box-sizing: border-box;
 }
@@ -11,12 +13,25 @@ html {
         font-family: 'Cuprum', sans-serif;
 
         .wrapper {
-            width: 90%;
-            margin: 0 auto;
+            background-color: darken($backgroundMain, 5%);
+            padding-bottom: 3vh;
+    //         display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // height: 100vh;
+            
 
-            .lang-link {
-                // text-align: right;
-                margin-top: 5px;
+            .lang-link-wrap {
+                padding: 5px 40px;
+                color: $colorSpecial;
+
+                .lang-link {
+                    color: $colorTitle;
+                }
+
+                .lang-link:hover {
+                    color: #fff;
+                }
             }
         }
     }

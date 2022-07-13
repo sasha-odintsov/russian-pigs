@@ -1,26 +1,43 @@
+@import './tools.scss';
+
 .content-wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // height: 94vh;
+    background: url('./img/concrete_wall_2.png');
+
     .main-content {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin: 20px 40px 30px 40px;
         
         .main-item {
+            box-shadow: -2px -2px 2px #fff, -2px 0 2px #fff,
+            0 -2px 2px #fff, 2px 2px 2px rgba(#000, .5),
+            0px 2px 2px rgba(#000, .5), 2px 0 2px rgba(#000, .5);
             display: flex;
             justify-content: space-between;
             width: 32.5%;
-            border: 1px solid #000;
-            border-radius: 10px;
+            border-radius: 20px;
             margin-top: 10px;
             padding: 10px 20px;
 
             .main-item-disc {
                 margin-right: 10px;
+                color: darken($backgroundMain, 5%);
+
+                .main-item-disc-title {
+                    @include text-shadow;
+                }
 
                 .main-item-disc-icon-wrap {
                     width: 60px;
 
                     .main-item-disc-icon {
                         width: 100%;
+                        filter: drop-shadow(2px 2px 1px #fff);
                     }
                 }
             }
@@ -31,6 +48,38 @@
                 text-align: end;
                 font-size: 1.2rem;
                 font-weight: bold;
+                @include text-shadow;
+
+                .main-item-amount-increase {
+                    margin-left: 5px;
+                    color: $colorSpecial;
+                    @include text-shadow;
+                }
+            }
+        }
+
+        .main-item-special {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .main-item-link {
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: $colorTitle;
+                background-color: darken($backgroundMain, 5%);
+                padding: 10px 20px;
+                border-radius: 10px;
+                box-shadow: 
+                1px 1px 2px rgba(#000, .5);
+            }
+
+            .main-item-link:hover {
+                color: $colorSpecial;
+            }
+
+            .main-item-link:active {
+                box-shadow: inset 0px 1px 1px darken($backgroundMain, 20%), 1px 1px 1px #fff;
             }
         }
     }

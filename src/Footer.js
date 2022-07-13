@@ -1,5 +1,5 @@
 import './Footer.scss'
-import { Link } from 'react-router-dom';
+import flag from './img/flag.jpg'
 
 function Footer(props) {
     return(
@@ -7,9 +7,9 @@ function Footer(props) {
             <p className="footer-item">
                 {props.txt}
             </p>
-            {/* <div className='lang-link'>
-        ENG <Link to='/ua'>UA</Link> 
-      </div> */}
+                <span className='footer-img-wrap'>
+                    <img src={flag} alt='flag ukraine' className='footer-img'/>
+                </span>
         </footer>
     )
 }
