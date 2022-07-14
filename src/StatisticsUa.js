@@ -1,6 +1,6 @@
 import StatisticsItem from './StatisticsItem';
 import GetValue from './GetValue';
-import checkAmount from '/checkAmount';
+import checkAmount from './checkAmount';
 import personnelUnits from './img/pig-z1.png';
 import aaWarSys from './img/aa-war-sys.png';
 import afv from './img/afv.png';
