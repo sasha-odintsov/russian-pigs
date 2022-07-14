@@ -1,4 +1,4 @@
-# Predictions
+# Russian Pigs
 
 Statistics of the General Staff of the Armed Forces of Ukraine on the losses of the russian occupier.
 
