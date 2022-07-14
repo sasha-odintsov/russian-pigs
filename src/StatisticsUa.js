@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import StatisticsItem from './StatisticsItem';
 import GetValue from './GetValue';
+import checkAmount from '/checkAmount';
 import personnelUnits from './img/pig-z1.png';
 import aaWarSys from './img/aa-war-sys.png';
 import afv from './img/afv.png';
@@ -18,7 +18,6 @@ import warship from './img/warship.png';
 
 function StatisticsUa() {
   const value = GetValue();
-  const checkAmount = (value) => value ? `(+${value})` : false;
   
   return(
     <>

@@ -7,7 +7,6 @@ function GetValue() {
         async function getData() {
             const response = await fetch('https://russianwarship.rip/api/v1/statistics/latest');
             const data = await response.json();
-            // console.log(data)
 
             setValue({
                 date: data.data.date.split('-').reverse().join('/'),
@@ -44,7 +43,6 @@ function GetValue() {
         }
         getData()
     }, [])
-    console.log(value)
     return value;
 }
 
