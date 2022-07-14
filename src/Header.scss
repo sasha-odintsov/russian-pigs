@@ -3,7 +3,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 10px 50px;
     background-color: $backgroundMain;
     color: $colorTitle;
     box-shadow: -1px -2px 4px rgba(#000, .2), 
@@ -53,5 +53,41 @@
                 font-weight: bold;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: block;
+
+        .header-primary-wrap {
+            .header-logo-wrap {
+                width: 60px;
+            }
+            .header-title-wrap {
+                .header-title-disc, .header-title {
+                    margin: 5px 10px;
+                    font-size: 1rem;
+                }
+                .header-title{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .header-secondary-wrap {
+            .header-date{
+                margin: 0 0 5px 0;
+                font-size: 1rem;
+            }
+            .header-day{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .header {
+        padding: 10px 20px;
     }
 }

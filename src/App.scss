@@ -13,17 +13,11 @@ html {
         font-family: 'Cuprum', sans-serif;
 
         .wrapper {
-            background-color: darken($backgroundMain, 5%);
-            padding-bottom: 3vh;
-    //         display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // height: 100vh;
-            
+            background-color: darken($backgroundMain, 5%);    
 
             .lang-link-wrap {
-                padding: 5px 40px;
-                color: $colorSpecial;
+                padding: 5px 50px;
+                color: $colorSpecial;           
 
                 .lang-link {
                     color: $colorTitle;
@@ -31,6 +25,18 @@ html {
 
                 .lang-link:hover {
                     color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    html {
+        body {
+            .wrapper {
+                .lang-link-wrap {
+                    padding: 5px 20px;
                 }
             }
         }

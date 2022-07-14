@@ -1,8 +1,17 @@
-# Getting Started with Create React App
+# Predictions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Statistics of the General Staff of the Armed Forces of Ukraine on the losses of the russian occupier.
+
+## Up and Run
+
+```
+npm install
+npm start
+```
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 

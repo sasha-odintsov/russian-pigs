@@ -1,22 +1,23 @@
 @import './tools.scss';
 
 .content-wrapper {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    min-height: calc(100vh - 28px);
     background: url('./img/concrete_wall_2.png');
 
     .main-content {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 20px 40px 30px 40px;
+        margin: 10px 50px 20px 50px;
         
         .main-item {
-            box-shadow: -2px -2px 2px #fff, -2px 0 2px #fff,
-            0 -2px 2px #fff, 2px 2px 2px rgba(#000, .5),
-            0px 2px 2px rgba(#000, .5), 2px 0 2px rgba(#000, .5);
+            box-shadow: -2px -2px 2px rgba(#fff, .8), -2px 0 2px rgba(#fff, .8),
+            0 -2px 2px rgba(#fff, .8), 2px 2px 2px rgba(#000, .4),
+            0px 2px 2px rgba(#000, .4), 2px 0 2px rgba(#000, .4);
             display: flex;
             justify-content: space-between;
             width: 32.5%;
@@ -81,6 +82,37 @@
             .main-item-link:active {
                 box-shadow: inset 0px 1px 1px darken($backgroundMain, 20%), 1px 1px 1px #fff;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        .main-content {
+            .main-item {
+                width: 49%;
+            }
+            .main-item-special {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content-wrapper {
+        .main-content {
+            .main-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .content-wrapper {
+        .main-content {
+            margin: 10px 20px 20px 20px;
         }
     }
 }
