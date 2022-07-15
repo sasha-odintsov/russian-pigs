@@ -29,7 +29,7 @@ function Statistics() {
       />
       <StatisticsItem 
       img={tank}
-      title={'tank'}
+      title={'tanks'}
       total={value.tanks}
       increase={checkAmount(value.increase_tanks)}
       />

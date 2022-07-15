@@ -24,10 +24,10 @@
             border-radius: 20px;
             margin-top: 10px;
             padding: 10px 20px;
+            color: darken($backgroundMain, 5%);
 
             .main-item-disc {
                 margin-right: 10px;
-                color: darken($backgroundMain, 5%);
 
                 .main-item-disc-title {
                     @include text-shadow;
@@ -113,6 +113,14 @@
     .content-wrapper {
         .main-content {
             margin: 10px 20px 20px 20px;
+
+            .main-item {
+                .main-item-disc {   
+                    .main-item-disc-icon-wrap {
+                        width: 50px;
+                    }
+                }
+            }
         }
     }
 }
